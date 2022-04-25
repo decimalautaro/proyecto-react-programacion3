@@ -8,9 +8,7 @@ server.use(express.json());
 
 
 server.use('/api/tareas',tareasRoutes);
-server.use('/',(req,res)=>{
-    res.send('como estas');
-})
+
 
 server.listen(PORT, ()=>{
     console.log(`Servidor escuchando en puerto ${PORT}`);
