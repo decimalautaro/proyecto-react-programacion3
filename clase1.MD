@@ -12,7 +12,7 @@
 12. agregamos carpeta dist a .gitignore
 13. git add . y git commit -m "iniciando servidor web"
 14. ir a package.json "script ": { "dev": "ts-node ./dist/app.ts", "start": "node ./dist/app.js", "build": "tsc" }
-15. npm i express @types/express
+15. npm i express @types/express -D
 16. git commit agregamos GET basico
 
 npm run dev para levantar el servidor
