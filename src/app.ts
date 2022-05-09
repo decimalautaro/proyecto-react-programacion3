@@ -1,7 +1,9 @@
 import express from 'express';
 import { connect } from 'mongoose';
-import { Tarea } from './models/Tarea';
 import tareasRouter from './routes/tareasRoutes'
+import alumnosRouter from './routes/alumnosRoutes'
+import materiassRouter from './routes/materiaRoutes'
+
 
 const PORT = 5005;
 const DB_NAME = 'prog3-2022';
@@ -10,6 +12,8 @@ const server = express();
 
 server.use(express.json());
 server.use("/api/tareas", tareasRouter);
+server.use("/api/alumnos",alumnosRouter );
+server.use("/api/materias",materiassRouter);
 
 
 
